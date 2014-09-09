@@ -58,6 +58,7 @@ scanner.scan(
     function (result) 
 	{
 		hideAllPages();
+		alert("dato=="+result.text);
 	    if(result.text == "page2")
 	    {
 	        document.getElementById('page2').style.visibility = 'visible';
@@ -75,7 +76,7 @@ scanner.scan(
 	    }
 		else
 		{
-            alert("Not a valid QR Code for this application");
+            alert("Not a valid QR Code for this application="+result);
 		}
     }, 
         function (error) 
